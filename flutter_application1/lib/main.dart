@@ -3,11 +3,11 @@ import 'privacy_policy.dart';
 import 'send_feedback.dart';
 import 'settings.dart';
 
-import 'contacts.dart';
+import 'gallery.dart';
 import 'dashboard.dart';
-import 'events.dart';
+import 'order_online.dart';
 import 'my_drawer_header.dart';
-import 'notes.dart';
+import 'menu.dart';
 import 'notifications.dart';
 
 void main() {
@@ -37,12 +37,12 @@ class _HomePageState extends State<HomePage> {
     var container;
     if (currentPage == DrawerSections.dashboard) {
       container = DashboardPage();
-    } else if (currentPage == DrawerSections.contacts) {
-      container = ContactsPage();
-    } else if (currentPage == DrawerSections.events) {
-      container = EventsPage();
-    } else if (currentPage == DrawerSections.notes) {
-      container = NotesPage();
+    } else if (currentPage == DrawerSections.gallery) {
+      container = GalleryPage();
+    } else if (currentPage == DrawerSections.menu) {
+      container = MenuPage();
+    } else if (currentPage == DrawerSections.order_online) {
+      container = OrderOnlinePage();
     } else if (currentPage == DrawerSections.settings) {
       container = SettingsPage();
     } else if (currentPage == DrawerSections.notifications) {
@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green[700],
-        title: Text("Rapid Tech"),
+        title: Text("ChiMaMa's"),
       ),
       body: container,
       drawer: Drawer(
@@ -83,12 +83,12 @@ class _HomePageState extends State<HomePage> {
         children: [
           menuItem(1, "Dashboard", Icons.dashboard_outlined,
               currentPage == DrawerSections.dashboard ? true : false),
-          menuItem(2, "Contacts", Icons.people_alt_outlined,
-              currentPage == DrawerSections.contacts ? true : false),
-          menuItem(3, "Events", Icons.event,
-              currentPage == DrawerSections.events ? true : false),
-          menuItem(4, "Notes", Icons.notes,
-              currentPage == DrawerSections.notes ? true : false),
+          menuItem(2, "Gallery", Icons.photo_rounded,
+              currentPage == DrawerSections.gallery ? true : false),
+          menuItem(3, "Menu", Icons.menu_book,
+              currentPage == DrawerSections.menu ? true : false),
+          menuItem(4, "Order Online", Icons.shopping_cart,
+              currentPage == DrawerSections.order_online ? true : false),
           Divider(),
           menuItem(5, "Settings", Icons.settings_outlined,
               currentPage == DrawerSections.settings ? true : false),
@@ -114,11 +114,11 @@ class _HomePageState extends State<HomePage> {
             if (id == 1) {
               currentPage = DrawerSections.dashboard;
             } else if (id == 2) {
-              currentPage = DrawerSections.contacts;
+              currentPage = DrawerSections.gallery;
             } else if (id == 3) {
-              currentPage = DrawerSections.events;
+              currentPage = DrawerSections.menu;
             } else if (id == 4) {
-              currentPage = DrawerSections.notes;
+              currentPage = DrawerSections.order_online;
             } else if (id == 5) {
               currentPage = DrawerSections.settings;
             } else if (id == 6) {
@@ -161,9 +161,9 @@ class _HomePageState extends State<HomePage> {
 
 enum DrawerSections {
   dashboard,
-  contacts,
-  events,
-  notes,
+  gallery,
+  menu,
+  order_online,
   settings,
   notifications,
   privacy_policy,
