@@ -22,7 +22,7 @@ class DashboardPage extends StatelessWidget {
               width: 750,
               decoration: BoxDecoration(
                 color: Colors.white,
-                boxShadow:[
+                boxShadow: [
                   BoxShadow(
                     color: Colors.black,
                     blurRadius: 10.0,
@@ -33,7 +33,7 @@ class DashboardPage extends StatelessWidget {
                   width: .5,
                   color: Colors.white,
                 ),
-                borderRadius: BorderRadius.circular(12),  
+                borderRadius: BorderRadius.circular(12),
               ),
               child: const Column(
                 children: [
@@ -89,7 +89,9 @@ class DashboardPage extends StatelessWidget {
                         width: 300.0,
                         child: const Row(
                           children: [
-                            SizedBox(width: 45.0,),
+                            SizedBox(
+                              width: 45.0,
+                            ),
                             Text(
                               'Mon',
                               style: TextStyle(
@@ -114,7 +116,9 @@ class DashboardPage extends StatelessWidget {
                         width: 300.0,
                         child: const Row(
                           children: [
-                            SizedBox(width: 30.0,),
+                            SizedBox(
+                              width: 30.0,
+                            ),
                             Text(
                               'Tue - Thur',
                               style: TextStyle(
@@ -139,7 +143,9 @@ class DashboardPage extends StatelessWidget {
                         width: 300.0,
                         child: const Row(
                           children: [
-                            SizedBox(width: 35.5,),
+                            SizedBox(
+                              width: 35.5,
+                            ),
                             Text(
                               'Fri - Sat',
                               style: TextStyle(
@@ -164,7 +170,9 @@ class DashboardPage extends StatelessWidget {
                         width: 300.0,
                         child: const Row(
                           children: [
-                            SizedBox(width: 45.0,),
+                            SizedBox(
+                              width: 45.0,
+                            ),
                             Text(
                               'Sun',
                               style: TextStyle(
@@ -183,7 +191,7 @@ class DashboardPage extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const SizedBox(height: 10.0),                                                                  
+                      const SizedBox(height: 10.0),
                     ],
                   ),
                 ),
@@ -195,9 +203,9 @@ class DashboardPage extends StatelessWidget {
                     color: Color.fromARGB(255, 212, 130, 8),
                     border: Border.all(
                       width: .5,
-                      color: const Color.fromARGB(255, 212, 130, 8),                      
+                      color: const Color.fromARGB(255, 212, 130, 8),
                     ),
-                    borderRadius: BorderRadius.circular(12),                    
+                    borderRadius: BorderRadius.circular(12),
                   ),
                   child: const Column(
                     children: [
@@ -218,13 +226,11 @@ class DashboardPage extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 10.0),
-                      Text(
-                        'Address: 45-37 C Bell Blvd, Bayside, NY 11361',
-                        style: TextStyle(
-                          fontSize: 10.0,
-                          color: Colors.white,
-                        )
-                      ),
+                      Text('Address: 45-37 C Bell Blvd, Bayside, NY 11361',
+                          style: TextStyle(
+                            fontSize: 10.0,
+                            color: Colors.white,
+                          )),
                     ],
                   ),
                 ),
