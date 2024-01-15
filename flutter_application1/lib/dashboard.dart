@@ -3,11 +3,6 @@ import 'package:flutter/material.dart';
 class DashboardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-<<<<<<< Updated upstream
-    return Container(
-      child: Center(
-        child: Text("Dashboard Page"),
-=======
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -237,7 +232,6 @@ class DashboardPage extends StatelessWidget {
             ),
           ],
         ),
->>>>>>> Stashed changes
       ),
     );
   }

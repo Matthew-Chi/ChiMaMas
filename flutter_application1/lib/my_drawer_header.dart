@@ -24,15 +24,9 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
 
             ),
           ),
-<<<<<<< Updated upstream
-          Text(
-            "Rapid Tech",
-            style: TextStyle(color: Colors.white, fontSize: 20),
-=======
           const Text(
             "ChiMaMa's Noodle House",
             style: TextStyle(color: Colors.white, fontSize: 20, fontFamily: 'Chocolate'),
->>>>>>> Stashed changes
           ),
         ],
       ),

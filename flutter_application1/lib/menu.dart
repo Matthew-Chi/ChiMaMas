@@ -9,11 +9,6 @@ class _MenuPageState extends State<MenuPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-<<<<<<< Updated upstream
-      child: Center(
-        child: Text("Menu Page"),
-      ),
-=======
         color: const Color.fromARGB(255, 238, 235, 213),
         child: SingleChildScrollView(
           child: Center(
@@ -833,7 +828,6 @@ class _MenuPageState extends State<MenuPage> {
             )
           )
         )
->>>>>>> Stashed changes
     );
   }
 }

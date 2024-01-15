@@ -22,11 +22,6 @@ class _OrderOnlinePageState extends State<OrderOnlinePage> {
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< Updated upstream
-    return Container(
-      child: Center(
-        child: Text("Order Online Page"),
-=======
     return DefaultTabController(
       length: 4, // Update length to 4 for four tabs
       child: Scaffold(
@@ -139,7 +134,6 @@ class _OrderOnlinePageState extends State<OrderOnlinePage> {
             ),
           ),
         ],
->>>>>>> Stashed changes
       ),
     );
   }
