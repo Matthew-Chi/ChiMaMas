@@ -9,7 +9,7 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.green[700],
+      color: Color.fromARGB(255, 212, 130, 8),
       width: double.infinity,
       height: 200,
       padding: EdgeInsets.only(top: 20.0),
@@ -24,9 +24,15 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
 
             ),
           ),
+<<<<<<< Updated upstream
           Text(
             "Rapid Tech",
             style: TextStyle(color: Colors.white, fontSize: 20),
+=======
+          const Text(
+            "ChiMaMa's Noodle House",
+            style: TextStyle(color: Colors.white, fontSize: 20, fontFamily: 'Chocolate'),
+>>>>>>> Stashed changes
           ),
         ],
       ),

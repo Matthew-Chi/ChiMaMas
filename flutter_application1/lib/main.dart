@@ -20,6 +20,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomePage(),
+      theme: ThemeData(
+        // Set the primary color of the app
+        primaryColor: Color.fromARGB(225, 193, 84, 0),
+        scaffoldBackgroundColor: const Color.fromARGB(255, 252, 250, 240)), // Change this line to set the background color
     );
   }
 }
@@ -54,13 +58,17 @@ class _HomePageState extends State<HomePage> {
     }
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green[700],
-        title: Text("ChiMaMa's"),
+        backgroundColor: Color.fromARGB(255, 212, 130, 8),
+        title: Text("ChiMaMa's Noodle House", style: TextStyle(color: Colors.white, fontFamily: 'Chocolate'),),
+        iconTheme: IconThemeData(
+          color: Colors.white,
+        ),
       ),
       body: container,
       drawer: Drawer(
         child: SingleChildScrollView(
           child: Container(
+            color: const Color.fromARGB(255, 238, 235, 213),
             child: Column(
               children: [
                 MyHeaderDrawer(),
@@ -106,7 +114,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget menuItem(int id, String title, IconData icon, bool selected) {
     return Material(
-      color: selected ? Colors.grey[300] : Colors.transparent,
+      color: selected ? const Color.fromARGB(255, 252, 250, 240) : Colors.transparent,
       child: InkWell(
         onTap: () {
           Navigator.pop(context);
@@ -146,8 +154,8 @@ class _HomePageState extends State<HomePage> {
                 child: Text(
                   title,
                   style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
+                    color: Color.fromARGB(255, 193, 84, 0),
+                    fontSize: 16, fontFamily: 'Chocolate'
                   ),
                 ),
               ),
