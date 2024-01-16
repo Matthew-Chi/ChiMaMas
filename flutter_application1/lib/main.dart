@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
-import 'privacy_policy.dart';
-import 'send_feedback.dart';
-import 'settings.dart';
-
 import 'gallery.dart';
 import 'dashboard.dart';
 import 'order_online.dart';
 import 'my_drawer_header.dart';
 import 'menu.dart';
-import 'notifications.dart';
 
 void main() {
   runApp(MyApp());
@@ -48,15 +43,8 @@ class _HomePageState extends State<HomePage> {
       container = MenuPage();
     } else if (currentPage == DrawerSections.order_online) {
       container = OrderOnlinePage();
-    } else if (currentPage == DrawerSections.settings) {
-      container = SettingsPage();
-    } else if (currentPage == DrawerSections.notifications) {
-      container = NotificationsPage();
-    } else if (currentPage == DrawerSections.privacy_policy) {
-      container = PrivacyPolicyPage();
-    } else if (currentPage == DrawerSections.send_feedback) {
-      container = SendFeedbackPage();
     }
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 212, 130, 8),
@@ -101,16 +89,6 @@ class _HomePageState extends State<HomePage> {
               currentPage == DrawerSections.menu ? true : false),
           menuItem(4, "Order Online", Icons.shopping_cart,
               currentPage == DrawerSections.order_online ? true : false),
-          // Divider(),
-          // menuItem(5, "Settings", Icons.settings_outlined,
-          //     currentPage == DrawerSections.settings ? true : false),
-          // menuItem(6, "Notifications", Icons.notifications_outlined,
-          //     currentPage == DrawerSections.notifications ? true : false),
-          // Divider(),
-          // menuItem(7, "Privacy policy", Icons.privacy_tip_outlined,
-          //     currentPage == DrawerSections.privacy_policy ? true : false),
-          // menuItem(8, "Send feedback", Icons.feedback_outlined,
-          //     currentPage == DrawerSections.send_feedback ? true : false),
         ],
       ),
     );
@@ -133,14 +111,6 @@ class _HomePageState extends State<HomePage> {
               currentPage = DrawerSections.menu;
             } else if (id == 4) {
               currentPage = DrawerSections.order_online;
-            } else if (id == 5) {
-              currentPage = DrawerSections.settings;
-            } else if (id == 6) {
-              currentPage = DrawerSections.notifications;
-            } else if (id == 7) {
-              currentPage = DrawerSections.privacy_policy;
-            } else if (id == 8) {
-              currentPage = DrawerSections.send_feedback;
             }
           });
         },
@@ -178,8 +148,4 @@ enum DrawerSections {
   gallery,
   menu,
   order_online,
-  settings,
-  notifications,
-  privacy_policy,
-  send_feedback,
 }

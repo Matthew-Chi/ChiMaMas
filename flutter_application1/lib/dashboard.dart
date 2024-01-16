@@ -60,144 +60,147 @@ class DashboardPage extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 20.0),
+            const SizedBox(height: 25.0),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const SizedBox(width: 100.0),
-                Container(
-                  width: 300.0,
-                  height: 150.0,
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 212, 130, 8),
-                    border: Border.all(
-                      width: .5,
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    width: 300.0,
+                    height: 150.0,
+                    decoration: BoxDecoration(
                       color: const Color.fromARGB(255, 212, 130, 8),
+                      border: Border.all(
+                        width: .5,
+                        color: const Color.fromARGB(255, 212, 130, 8),
+                      ),
+                      borderRadius: BorderRadius.circular(12),
                     ),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Column(
-                    children: [
-                      const SizedBox(height: 10.0),
-                      const Text(
-                        'Hours',
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.white,
+                    child: Column(
+                      children: [
+                        const SizedBox(height: 10.0),
+                        const Text(
+                          'Hours',
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.white,
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 10.0),
-                      Container(
-                        color: const Color.fromARGB(255, 212, 130, 8),
-                        width: 300.0,
-                        child: const Row(
-                          children: [
-                            SizedBox(
-                              width: 45.0,
-                            ),
-                            Text(
-                              'Mon',
-                              style: TextStyle(
-                                fontSize: 10.0,
-                                color: Colors.white,
+                        const SizedBox(height: 10.0),
+                        Container(
+                          color: const Color.fromARGB(255, 212, 130, 8),
+                          width: 300.0,
+                          child: const Row(
+                            children: [
+                              SizedBox(
+                                width: 45.0,
                               ),
-                            ),
-                            SizedBox(width: 150.0),
-                            Text(
-                              'Closed',
-                              style: TextStyle(
-                                fontSize: 10.0,
-                                color: Colors.white,
+                              Text(
+                                'Mon',
+                                style: TextStyle(
+                                  fontSize: 10.0,
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                          ],
+                              SizedBox(width: 150.0),
+                              Text(
+                                'Closed',
+                                style: TextStyle(
+                                  fontSize: 10.0,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 10.0),
-                      Container(
-                        color: const Color.fromARGB(255, 212, 130, 8),
-                        width: 300.0,
-                        child: const Row(
-                          children: [
-                            SizedBox(
-                              width: 30.0,
-                            ),
-                            Text(
-                              'Tue - Thur',
-                              style: TextStyle(
-                                fontSize: 10.0,
-                                color: Colors.white,
+                        const SizedBox(height: 10.0),
+                        Container(
+                          color: const Color.fromARGB(255, 212, 130, 8),
+                          width: 300.0,
+                          child: const Row(
+                            children: [
+                              SizedBox(
+                                width: 30.0,
                               ),
-                            ),
-                            SizedBox(width: 105.0),
-                            Text(
-                              '11:30 AM to 8:30 PM',
-                              style: TextStyle(
-                                fontSize: 10.0,
-                                color: Colors.white,
+                              Text(
+                                'Tue - Thur',
+                                style: TextStyle(
+                                  fontSize: 10.0,
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                          ],
+                              SizedBox(width: 105.0),
+                              Text(
+                                '11:30 AM to 8:30 PM',
+                                style: TextStyle(
+                                  fontSize: 10.0,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 10.0),
-                      Container(
-                        color: const Color.fromARGB(255, 212, 130, 8),
-                        width: 300.0,
-                        child: const Row(
-                          children: [
-                            SizedBox(
-                              width: 35.5,
-                            ),
-                            Text(
-                              'Fri - Sat',
-                              style: TextStyle(
-                                fontSize: 10.0,
-                                color: Colors.white,
+                        const SizedBox(height: 10.0),
+                        Container(
+                          color: const Color.fromARGB(255, 212, 130, 8),
+                          width: 300.0,
+                          child: const Row(
+                            children: [
+                              SizedBox(
+                                width: 35.5,
                               ),
-                            ),
-                            SizedBox(width: 111.0),
-                            Text(
-                              '11:30 AM to 9:00 PM',
-                              style: TextStyle(
-                                fontSize: 10.0,
-                                color: Colors.white,
+                              Text(
+                                'Fri - Sat',
+                                style: TextStyle(
+                                  fontSize: 10.0,
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                          ],
+                              SizedBox(width: 111.0),
+                              Text(
+                                '11:30 AM to 9:00 PM',
+                                style: TextStyle(
+                                  fontSize: 10.0,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 10.0),
-                      Container(
-                        color: const Color.fromARGB(255, 212, 130, 8),
-                        width: 300.0,
-                        child: const Row(
-                          children: [
-                            SizedBox(
-                              width: 45.0,
-                            ),
-                            Text(
-                              'Sun',
-                              style: TextStyle(
-                                fontSize: 10.0,
-                                color: Colors.white,
+                        const SizedBox(height: 10.0),
+                        Container(
+                          color: const Color.fromARGB(255, 212, 130, 8),
+                          width: 300.0,
+                          child: const Row(
+                            children: [
+                              SizedBox(
+                                width: 45.0,
                               ),
-                            ),
-                            SizedBox(width: 121.0),
-                            Text(
-                              '11:30 AM to 8:30 PM',
-                              style: TextStyle(
-                                fontSize: 10.0,
-                                color: Colors.white,
+                              Text(
+                                'Sun',
+                                style: TextStyle(
+                                  fontSize: 10.0,
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                          ],
+                              SizedBox(width: 121.0),
+                              Text(
+                                '11:30 AM to 8:30 PM',
+                                style: TextStyle(
+                                  fontSize: 10.0,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                      //const SizedBox(height: 10.0),
-                    ],
+                        //const SizedBox(height: 10.0),
+                      ],
+                    ),
                   ),
                 ),
-                Padding(padding: EdgeInsets.only(left: 100)),
+                Padding(padding: EdgeInsets.only(left: 90)),
                 Container(
                   width: 250.0,
                   height: 100.0,
