@@ -7,19 +7,21 @@ class DashboardPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
-              height: 325,
-              width: 775,
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('images/food.png'),
+            Padding(
+              padding: const EdgeInsets.only(top: 8.0),
+              child: Container(
+                height: 350,
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('images/main_pic.png'),
+                  ),
                 ),
               ),
             ),
             const SizedBox(height: 10.0),
             Container(
               height: 100,
-              width: 750,
+              width: 650,
               decoration: BoxDecoration(
                 color: Colors.white,
                 boxShadow: [
@@ -45,15 +47,15 @@ class DashboardPage extends StatelessWidget {
                   SizedBox(height: 5.0),
                   Text(
                     "Welcome to Chimama's Noodle House located at 45-37 C Bell Blvd, Bayside, NY 11361!",
-                    style: TextStyle(fontSize: 10.0),
+                    style: TextStyle(fontSize: 11.0),
                   ),
                   Text(
                     "We offer our customers delicious, tasty, and constant innovation using carefully selected ingredients to create the most",
-                    style: TextStyle(fontSize: 10.0),
+                    style: TextStyle(fontSize: 11.0),
                   ),
                   Text(
                     "delicious food. Come and experience our friendly atmosphere and excellent service. Fresh, appetizing, delicious food.",
-                    style: TextStyle(fontSize: 10.0),
+                    style: TextStyle(fontSize: 11.0),
                   ),
                 ],
               ),
@@ -61,7 +63,7 @@ class DashboardPage extends StatelessWidget {
             const SizedBox(height: 20.0),
             Row(
               children: [
-                const SizedBox(width: 50.0),
+                const SizedBox(width: 100.0),
                 Container(
                   width: 300.0,
                   height: 150.0,
@@ -191,13 +193,13 @@ class DashboardPage extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const SizedBox(height: 10.0),
+                      //const SizedBox(height: 10.0),
                     ],
                   ),
                 ),
-                const SizedBox(width: 120.0),
+                Padding(padding: EdgeInsets.only(left: 100)),
                 Container(
-                  width: 300.0,
+                  width: 250.0,
                   height: 100.0,
                   decoration: BoxDecoration(
                     color: Color.fromARGB(255, 212, 130, 8),

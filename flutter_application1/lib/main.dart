@@ -21,9 +21,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: HomePage(),
       theme: ThemeData(
-        // Set the primary color of the app
-        primaryColor: Color.fromARGB(225, 193, 84, 0),
-        scaffoldBackgroundColor: const Color.fromARGB(255, 252, 250, 240)), // Change this line to set the background color
+          // Set the primary color of the app
+          primaryColor: Color.fromARGB(225, 193, 84, 0),
+          scaffoldBackgroundColor: const Color.fromARGB(255, 252, 250,
+              240)), // Change this line to set the background color
     );
   }
 }
@@ -59,7 +60,10 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 212, 130, 8),
-        title: Text("ChiMaMa's Noodle House", style: TextStyle(color: Colors.white, fontFamily: 'Chocolate'),),
+        title: Text(
+          "ChiMaMa's Noodle House",
+          style: TextStyle(color: Colors.white, fontFamily: 'Chocolate'),
+        ),
         iconTheme: IconThemeData(
           color: Colors.white,
         ),
@@ -97,16 +101,16 @@ class _HomePageState extends State<HomePage> {
               currentPage == DrawerSections.menu ? true : false),
           menuItem(4, "Order Online", Icons.shopping_cart,
               currentPage == DrawerSections.order_online ? true : false),
-          Divider(),
-          menuItem(5, "Settings", Icons.settings_outlined,
-              currentPage == DrawerSections.settings ? true : false),
-          menuItem(6, "Notifications", Icons.notifications_outlined,
-              currentPage == DrawerSections.notifications ? true : false),
-          Divider(),
-          menuItem(7, "Privacy policy", Icons.privacy_tip_outlined,
-              currentPage == DrawerSections.privacy_policy ? true : false),
-          menuItem(8, "Send feedback", Icons.feedback_outlined,
-              currentPage == DrawerSections.send_feedback ? true : false),
+          // Divider(),
+          // menuItem(5, "Settings", Icons.settings_outlined,
+          //     currentPage == DrawerSections.settings ? true : false),
+          // menuItem(6, "Notifications", Icons.notifications_outlined,
+          //     currentPage == DrawerSections.notifications ? true : false),
+          // Divider(),
+          // menuItem(7, "Privacy policy", Icons.privacy_tip_outlined,
+          //     currentPage == DrawerSections.privacy_policy ? true : false),
+          // menuItem(8, "Send feedback", Icons.feedback_outlined,
+          //     currentPage == DrawerSections.send_feedback ? true : false),
         ],
       ),
     );
@@ -114,7 +118,9 @@ class _HomePageState extends State<HomePage> {
 
   Widget menuItem(int id, String title, IconData icon, bool selected) {
     return Material(
-      color: selected ? const Color.fromARGB(255, 252, 250, 240) : Colors.transparent,
+      color: selected
+          ? const Color.fromARGB(255, 252, 250, 240)
+          : Colors.transparent,
       child: InkWell(
         onTap: () {
           Navigator.pop(context);
@@ -154,9 +160,9 @@ class _HomePageState extends State<HomePage> {
                 child: Text(
                   title,
                   style: TextStyle(
-                    color: Color.fromARGB(255, 193, 84, 0),
-                    fontSize: 16, fontFamily: 'Chocolate'
-                  ),
+                      color: Color.fromARGB(255, 193, 84, 0),
+                      fontSize: 16,
+                      fontFamily: 'Chocolate'),
                 ),
               ),
             ],
